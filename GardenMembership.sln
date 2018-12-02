@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GardenMembership.Domain", "
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{587DB23A-01C2-499F-8F9A-CF68C0CF1073}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GardenMembership.Application", "GardenMembership.Domain\GardenMembership.Application\GardenMembership.Application.csproj", "{A48EE3B5-4225-469F-AF65-4704487D35EA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,8 +17,13 @@ Global
 		{E6834068-607C-4117-9576-CCED31A04D40}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E6834068-607C-4117-9576-CCED31A04D40}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E6834068-607C-4117-9576-CCED31A04D40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A48EE3B5-4225-469F-AF65-4704487D35EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A48EE3B5-4225-469F-AF65-4704487D35EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A48EE3B5-4225-469F-AF65-4704487D35EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A48EE3B5-4225-469F-AF65-4704487D35EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{E6834068-607C-4117-9576-CCED31A04D40} = {587DB23A-01C2-499F-8F9A-CF68C0CF1073}
+		{A48EE3B5-4225-469F-AF65-4704487D35EA} = {587DB23A-01C2-499F-8F9A-CF68C0CF1073}
 	EndGlobalSection
 EndGlobal
