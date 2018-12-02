@@ -1,10 +1,10 @@
-﻿using System;
+﻿using GardenMembership.Domain.Model.Enums;
+
 namespace GardenMembership.Domain.Model
 {
-    public class Person
+    public abstract class Person
     {
-        public Person()
-        {
-        }
+        public PersonTitleEnum Title { get; private set; }
+
     }
 }
