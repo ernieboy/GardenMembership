@@ -12,8 +12,12 @@
     <Folder Include="Abstractions\" />
     <Folder Include="Commands\" />
     <Folder Include="Model\Enums\" />
+    <Folder Include="DomainEvents\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MediatR" Version="5.1.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GardenMembership.SharedKernel\GardenMembership.SharedKernel.csproj" />
   </ItemGroup>
 </Project>

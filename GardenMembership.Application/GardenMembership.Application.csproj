@@ -14,4 +14,8 @@
   <ItemGroup>
     <Compile Remove="Class1.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GardenMembership.Domain\GardenMembership.Domain.csproj" />
+    <ProjectReference Include="..\GardenMembership.SharedKernel\GardenMembership.SharedKernel.csproj" />
+  </ItemGroup>
 </Project>

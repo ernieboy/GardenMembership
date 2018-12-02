@@ -7,6 +7,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{587DB23A-01C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GardenMembership.Application", "GardenMembership.Application\GardenMembership.Application.csproj", "{A48EE3B5-4225-469F-AF65-4704487D35EA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GardenMembership.UI", "GardenMembership.UI\GardenMembership.UI.csproj", "{693C7830-5266-4569-8E8C-1964B89DFC38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GardenMembership.SharedKernel", "GardenMembership.SharedKernel\GardenMembership.SharedKernel.csproj", "{4307C5AD-CD43-4E20-A487-94A6EF015590}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,9 +25,19 @@ Global
 		{A48EE3B5-4225-469F-AF65-4704487D35EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A48EE3B5-4225-469F-AF65-4704487D35EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A48EE3B5-4225-469F-AF65-4704487D35EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{693C7830-5266-4569-8E8C-1964B89DFC38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{693C7830-5266-4569-8E8C-1964B89DFC38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{693C7830-5266-4569-8E8C-1964B89DFC38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{693C7830-5266-4569-8E8C-1964B89DFC38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4307C5AD-CD43-4E20-A487-94A6EF015590}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4307C5AD-CD43-4E20-A487-94A6EF015590}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4307C5AD-CD43-4E20-A487-94A6EF015590}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4307C5AD-CD43-4E20-A487-94A6EF015590}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{E6834068-607C-4117-9576-CCED31A04D40} = {587DB23A-01C2-499F-8F9A-CF68C0CF1073}
 		{A48EE3B5-4225-469F-AF65-4704487D35EA} = {587DB23A-01C2-499F-8F9A-CF68C0CF1073}
+		{693C7830-5266-4569-8E8C-1964B89DFC38} = {587DB23A-01C2-499F-8F9A-CF68C0CF1073}
+		{4307C5AD-CD43-4E20-A487-94A6EF015590} = {587DB23A-01C2-499F-8F9A-CF68C0CF1073}
 	EndGlobalSection
 EndGlobal
