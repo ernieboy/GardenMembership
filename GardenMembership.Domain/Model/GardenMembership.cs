@@ -3,7 +3,7 @@ using GardenMembership.SharedKernel.Interfaces;
 
 namespace GardenMembership.Domain.Model
 {
-    public class GardenMembership : IAggregateRoot
+    public class GardenMembership : AggregateRoot
     {
         public GardenMembership()
         {

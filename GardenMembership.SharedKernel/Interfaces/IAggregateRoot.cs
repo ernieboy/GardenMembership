@@ -1,5 +1,4 @@
-﻿using System;
-namespace GardenMembership.SharedKernel.Interfaces
+﻿namespace GardenMembership.SharedKernel.Interfaces
 {
     public interface IAggregateRoot
     {

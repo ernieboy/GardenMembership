@@ -9,6 +9,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\GardenMembership.SharedKernel\GardenMembership.SharedKernel.csproj" />
+    <ProjectReference Include="..\GardenMembership.Domain\GardenMembership.Domain.csproj" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.4" />

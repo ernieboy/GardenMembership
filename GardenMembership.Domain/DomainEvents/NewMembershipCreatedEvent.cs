@@ -1,9 +1,8 @@
-﻿using System;
-using GardenMembership.SharedKernel.Interfaces;
+﻿using MediatR;
 
 namespace GardenMembership.Domain.DomainEvents
 {
-    public class NewMembershipCreatedEvent : IDomainEvent
+    public class NewMembershipCreatedEvent : INotification
     {
         public NewMembershipCreatedEvent()
         {
