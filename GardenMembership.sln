@@ -5,7 +5,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GardenMembership.Domain", "
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{587DB23A-01C2-499F-8F9A-CF68C0CF1073}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GardenMembership.Application", "GardenMembership.Domain\GardenMembership.Application\GardenMembership.Application.csproj", "{A48EE3B5-4225-469F-AF65-4704487D35EA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GardenMembership.Application", "GardenMembership.Application\GardenMembership.Application.csproj", "{A48EE3B5-4225-469F-AF65-4704487D35EA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
