@@ -17,7 +17,7 @@ namespace GardenMembership.Infrastructure.Persistence.Implementations
             _mediatr = mediatr;
         }
 
-        public DbSet<Domain.Model.GardenMembership> GardenMemberships { get; set; }
+        public DbSet<Basket> Baskets { get; set; }
 
         public async override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default(CancellationToken))
         {

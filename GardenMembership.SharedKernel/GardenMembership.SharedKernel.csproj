@@ -11,6 +11,7 @@
     <Folder Include="Interfaces\" />
     <Folder Include="Extensions\" />
     <Folder Include="Extensions\EntityFramework\" />
+    <Folder Include="Validation\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.4" />

@@ -1,12 +1,12 @@
-﻿using System;
-using GardenMembership.SharedKernel.Interfaces;
+﻿using GardenMembership.Domain.Model.Enums;
 
 namespace GardenMembership.Domain.Model
 {
-    public class GardenMembership : AggregateRoot
+    public abstract class GardenMembership : BaseEntity
     {
-        public GardenMembership()
-        {
-        }
+        public MembershipTypeEnum MembershipType { get; protected set; }
+
+        public Person MemberOne { get; protected set; }
+
     }
 }
