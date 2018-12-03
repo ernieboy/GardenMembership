@@ -17,5 +17,6 @@
   <ItemGroup>
     <ProjectReference Include="..\GardenMembership.Domain\GardenMembership.Domain.csproj" />
     <ProjectReference Include="..\GardenMembership.SharedKernel\GardenMembership.SharedKernel.csproj" />
+    <ProjectReference Include="..\GardenMembership.Infrastructure.Persistence\GardenMembership.Infrastructure.Persistence.csproj" />
   </ItemGroup>
 </Project>
