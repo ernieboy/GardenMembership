@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using GardenMembership.Domain.Model;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
+using GardenMembership.SharedKernel.Extensions.EntityFramework;
 
 namespace GardenMembership.Infrastructure.Persistence.Implementations
 {
@@ -20,6 +21,8 @@ namespace GardenMembership.Infrastructure.Persistence.Implementations
 
         public async override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default(CancellationToken))
         {
+            this.ApplyStateChanges();
+
             var domainEventEntities = ChangeTracker.Entries<AggregateRoot>()
                 .Select(po => po.Entity)
                 .Where(po => po.Events.Any())
@@ -34,6 +37,7 @@ namespace GardenMembership.Infrastructure.Persistence.Implementations
                     await _mediatr.Publish(domainEvent);
                 }
             }
+
             return await base.SaveChangesAsync(cancellationToken);
         }
     }
