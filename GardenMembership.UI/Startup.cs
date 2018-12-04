@@ -2,6 +2,7 @@ using System;
 using GardenMembership.Application.CommandHandlers;
 using GardenMembership.Domain.DomainEvents;
 using GardenMembership.Infrastructure.Persistence.Implementations;
+using GardenMembership.SharedKernel.Settings;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -19,6 +20,7 @@ namespace GardenMembership.UI
     public class Startup
     {
         private readonly IConfiguration _configuration;
+        private  ApplicationSecrets _applicationSecrets;
 
         public Startup(IConfiguration configuration)
         {
@@ -28,8 +30,10 @@ namespace GardenMembership.UI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.Configure<ApplicationSecrets>(_configuration.GetSection("ApplicationSecrets"));
+
             services.AddDbContextPool<GardenMembershipDbContext>( 
-                options => options.UseMySql(_configuration["ConnectionString"],
+                options => options.UseMySql(_configuration["ApplicationSecrets:ConnectionString"],
                     mySqlOptions =>
                     {
                         mySqlOptions.ServerVersion(new Version(5, 7, 22), ServerType.MySql);
