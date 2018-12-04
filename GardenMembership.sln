@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GardenMembership.SharedKern
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GardenMembership.Infrastructure.Persistence", "GardenMembership.Infrastructure.Persistence\GardenMembership.Infrastructure.Persistence.csproj", "{7DB21FDC-2508-48E6-87DE-41BD14ADED3E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GardenMembership.Queries", "GardenMembership.Queries\GardenMembership.Queries.csproj", "{971B5700-967E-4DDE-ACDA-F00A6A6399CD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{7DB21FDC-2508-48E6-87DE-41BD14ADED3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7DB21FDC-2508-48E6-87DE-41BD14ADED3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7DB21FDC-2508-48E6-87DE-41BD14ADED3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{971B5700-967E-4DDE-ACDA-F00A6A6399CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{971B5700-967E-4DDE-ACDA-F00A6A6399CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{971B5700-967E-4DDE-ACDA-F00A6A6399CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{971B5700-967E-4DDE-ACDA-F00A6A6399CD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{E6834068-607C-4117-9576-CCED31A04D40} = {587DB23A-01C2-499F-8F9A-CF68C0CF1073}
@@ -46,5 +52,6 @@ Global
 		{693C7830-5266-4569-8E8C-1964B89DFC38} = {587DB23A-01C2-499F-8F9A-CF68C0CF1073}
 		{4307C5AD-CD43-4E20-A487-94A6EF015590} = {587DB23A-01C2-499F-8F9A-CF68C0CF1073}
 		{7DB21FDC-2508-48E6-87DE-41BD14ADED3E} = {587DB23A-01C2-499F-8F9A-CF68C0CF1073}
+		{971B5700-967E-4DDE-ACDA-F00A6A6399CD} = {587DB23A-01C2-499F-8F9A-CF68C0CF1073}
 	EndGlobalSection
 EndGlobal
