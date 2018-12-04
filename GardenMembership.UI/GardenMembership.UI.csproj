@@ -3,6 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
     <AspNetCoreHostingModel>inprocess</AspNetCoreHostingModel>
+    <UserSecretsId>7734299b-aacd-4a1a-a884-6aaf42770a52</UserSecretsId>
   </PropertyGroup>
 
 
@@ -11,6 +12,7 @@
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0-preview3-35497" PrivateAssets="All" />
     <PackageReference Include="MediatR" Version="5.1.0" />
     <PackageReference Include="StructureMap.Microsoft.DependencyInjection" Version="1.4.0" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="2.1.4" />
   </ItemGroup>
 
   <ItemGroup>

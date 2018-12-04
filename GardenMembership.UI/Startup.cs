@@ -1,13 +1,16 @@
 using System;
 using GardenMembership.Application.CommandHandlers;
 using GardenMembership.Domain.DomainEvents;
+using GardenMembership.Infrastructure.Persistence.Implementations;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
 using StructureMap;
 using StructureMap.Pipeline;
 
@@ -22,10 +25,16 @@ namespace GardenMembership.UI
             _configuration = configuration;
         }
 
-
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContextPool<GardenMembershipDbContext>( 
+                options => options.UseMySql(_configuration["ConnectionString"],
+                    mySqlOptions =>
+                    {
+                        mySqlOptions.ServerVersion(new Version(5, 7, 22), ServerType.MySql);
+                    }
+            ));
             services.Configure<CookiePolicyOptions>(options =>
             {
                 // This lambda determines whether user consent for non-essential cookies is needed for a given request.
@@ -73,6 +82,7 @@ namespace GardenMembership.UI
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+
             }
             else
             {
