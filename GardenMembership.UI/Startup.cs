@@ -20,7 +20,6 @@ namespace GardenMembership.UI
     public class Startup
     {
         private readonly IConfiguration _configuration;
-        private  ApplicationSecrets _applicationSecrets;
 
         public Startup(IConfiguration configuration)
         {
